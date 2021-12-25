@@ -1,0 +1,37 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Rainfall Prediction </h1><br>
+
+        <form method="POST", action="{{url_for('Home')}}">
+           <b>    Month    : <input type="text", name='a', placeholder="enter Month"> <br><br>
+                  
+                 Tem_Max    :  <input type="text", name='b', placeholder="enter Tem_Max"> <br><br>
+                 Pressure    :  <input type="text", name='c', placeholder="enter Pressure"> <br><br>
+                 RH_Min    :  <input type="text", name='d', placeholder="enter RH_Min"> <br><br>
+
+
+                 Location    :                   <form>
+                    <select name='Location'>
+                        <option>colombo</option>
+                        <option>vavuniya</option>
+                        <option>katugastota</option>
+                     </select>
+                   </form> <br><br>
+            <input type="submit" , value='predict!' >
+        </form>
+
+
+   
+
+
+        <br></b>
+
+        <img src='static/image1.jpg' alt="Rain">
+
+    </center>
+
+    </body>
+</html>

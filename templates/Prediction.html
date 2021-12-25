@@ -1,0 +1,62 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+        <h1>  RAIN OR NOT PREDICTION :  </h1>
+
+
+{% if data0 == 0 %}
+        <h1>Sunny day</h1>
+    <img src='static/Sunny_Day.jpg'>
+
+  {%endif%}
+    
+    {% if data0 == 1 %}
+    <h1>Rainy day</h1>
+    <img src='static/Rainy_Day.jpg'>
+
+    {%endif%}
+    <br><br>
+    <br><br>
+
+        <h1>  RANGE PREDICTION :  </h1>
+
+    {% if data == 0 %}
+        <h1>0 - 0.1mm (No rain)</h1>
+    
+
+  {%endif%}
+    
+    {% if data == 1 %}
+    <h1>0.1mm - 10mm</h1>
+    
+
+    {%endif%}
+ {% if data == 2 %}
+    <h1>10mm - 20mm</h1>
+    
+
+    {%endif%}
+ {% if data == 3 %}
+    <h1>20mm - 30mm</h1>
+    
+
+    {%endif%}
+ {% if data == 4 %}
+    <h1> 30+ mm</h1>
+    
+
+    {%endif%}
+
+        <br><br>
+
+
+    <br><br>
+    <a href='/'>go back to Home page</a>
+
+    </center>
+
+</body>
+
+</html>
